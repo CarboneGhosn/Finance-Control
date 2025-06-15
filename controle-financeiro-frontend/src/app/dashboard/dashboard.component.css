@@ -1,0 +1,58 @@
+/* dashboard.component.css */
+
+/* Estilo para melhorar o visual do gráfico */
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+/* Estilo do card de transações e formulário */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Títulos dos cards */
+.card-header {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Botão de adicionar */
+button[type="submit"] {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Estilo da tabela */
+.table th,
+.table td {
+    vertical-align: middle;
+    font-size: 0.95rem;
+}
+
+/* Cor do saldo total */
+.card-footer span.text-danger {
+    color: #dc3545 !important;
+}
+
+.card-footer span.text-success {
+    color: #28a745 !important;
+}
+
+/* Responsivo para mobile */
+@media (max-width: 768px) {
+    canvas {
+        max-width: 100%;
+    }
+
+    .card-body,
+    .card-footer {
+        padding: 1rem;
+    }
+
+    .card-header {
+        font-size: 1rem;
+    }
+}
